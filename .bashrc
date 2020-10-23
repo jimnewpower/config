@@ -1,5 +1,8 @@
-# python path
-export PATH=${PATH}:/Users/jim/AppData/Local/Programs/Python/Python38/python
+# home
+alias home='cd ~'
+
+# Platte source tree
+alias src='cd ${SRC_TREE}'
 
 # human-readable file listing
 alias ll='ls -alh'
@@ -7,10 +10,6 @@ alias ll='ls -alh'
 # disk usage
 alias df='df -H'
 alias du='du -ch'
-
-# Platte source tree
-export SRC_TREE='/c/Users/jim/src/basinmod'
-alias src='cd ${SRC_TREE}'
 
 # shortcuts to quickly go up a directory
 alias u='cd ..'
