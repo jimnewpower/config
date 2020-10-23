@@ -7,6 +7,10 @@
     changed = yellow
     untracked = cyan
 
+[core]
+    # convert CRLF to LF on commit
+    autocrlf = input
+
 [alias]
      # hist = one-line per commit log
      hist = log --pretty=format:\"%h %ad | %s%d [%an]\" --graph --date=short
