@@ -17,6 +17,9 @@
      # stat = short status
      stat = status -s
 
+     # View the log and diff for a commit (previous if no SHA1 provided)
+     details = log -n1 -p --format=fuller
+
      # tags = verbose tag list
      # %C(auto) = turn on auto coloring
      # %h = short hash
