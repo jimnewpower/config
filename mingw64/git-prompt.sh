@@ -1,5 +1,8 @@
 # Shell Prompt settings for Mingw64 (Windows)
-# This file should exist in: C:\Program Files\Git\etc\profile.d\git-prompt.sh
+# This file should exist in: 
+#     git-install-location\\etc\profile.d\git-prompt.sh
+#     e.g.
+#     C:\Program Files\Git\etc\profile.d\git-prompt.sh
 
 if test -f /etc/profile.d/git-sdk.sh
 then
