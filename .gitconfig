@@ -1,0 +1,8 @@
+[user]
+  email = jimnewpower@gmail.com
+	name = Jim Newpower
+
+[color "status"]
+    added = green
+    changed = yellow
+    untracked = cyan
