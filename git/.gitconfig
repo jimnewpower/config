@@ -1,22 +1,31 @@
-[user]
-    email = jimnewpower@gmail.com
-    name = Jim Newpower
-
-[color "status"]
-    added = green
-    changed = yellow
-    untracked = cyan
-
 [core]
-    # convert CRLF to LF on commit
-    autocrlf = input
+    sshCommand = "ssh -i ~/.ssh/github/id_rsa2"
+
+[user]
+    name = Jim Newpower
+    email = jimnewpower@gmail.com
 
 [alias]
      # hist = one-line per commit log
      hist = log --pretty=format:\"%h %ad | %s%d [%an]\" --graph --date=short
 
+     # lg = pretty format
+     lg = "log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit"
+
      # logv = log + names and status of changed files
      logv = log --name-status
+
+     # list of commits
+     l1 = log --pretty=format:"%C(yellow)%h\\ %ad%Cred%d\\ %Creset%s%Cblue\\ [%cn]" --decorate --date=short
+
+     # graph one-liner
+     l2 = log --graph --oneline --decorate --all
+
+     # search commits for specific term
+     grep = !git log --oneline | grep
+
+     # all differences in last commit
+     last = log -p -1
 
      # stat = short status
      stat = status -s
@@ -31,3 +40,4 @@
      # %d = ref names, like the --decorate option
      # %s = subject
      tags = log --tags --no-walk --date=format:%Y-%m-%dT%H:%M:%S --pretty='%C(auto)%h %cd%d %s'
+
