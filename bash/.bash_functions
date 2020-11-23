@@ -13,7 +13,7 @@ function up() {
 }
 
 function ctest() {
-    # argument is .c file that contains a main()
+    # argument is .c file that contains a main(), and only includes standard headers
     cc -o testme "$1"
     "${PWD}/testme"
 }
