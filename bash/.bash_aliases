@@ -11,3 +11,7 @@ alias uu='cd ../..'
 alias uuu='cd ../../..'
 alias src-platte='cd $SRC_TREE'
 alias src='cd $SRC_TREE_PERSONAL'
+
+# dev
+# alias ctest='cc -o testme $1 && ./testme'
+
