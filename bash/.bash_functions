@@ -1,27 +1,22 @@
-function cl() {
-    DIR="$*";
-        # if no DIR given, go home
-        if [ $# -lt 1 ]; then
-            DIR=$HOME;
-    fi;
-    builtin cd "${DIR}" && \
-        ls -F --color=auto
-}
-
+# cd to sibling directory
 function up() {
     builtin cd ../$1
 }
 
+# compile and run a c main program
+# argument is .c file that contains a main(), and only includes standard headers
 function ctest() {
-    # argument is .c file that contains a main(), and only includes standard headers
     cc -o testme "$1"
     "${PWD}/testme"
 }
 
+# choose a random character from the given set
 choose() {
     echo ${1:RANDOM%${#1}:1};
 }
 
+# generate a strong, random password 17 characters with no duplicates
+# and includes special characters
 function randpass() {
     pass="$({
       choose 'abcdef'
@@ -57,6 +52,7 @@ function randpass2() {
     printf "\n"
 }
 
+# display comprehensive machine info
 function machine_info() {
     echo -e "\nMachine information:" ; uname -a
     echo -e "\nUsers logged on:" ; w -h
