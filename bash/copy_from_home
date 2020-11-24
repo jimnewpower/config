@@ -1,0 +1,4 @@
+#!/usr/bin/bash
+cp -i ~/.bash* .
+cp -i ~/cunit_test_template.c .
+
