@@ -1,7 +1,7 @@
 #!/usr/bin/bash
 cp -i ~/.bash_aliases .
-cp -i ~/..bash_functions .
-cp -i ~/..bash_logout .
-cp -i ~/..bash_profile .
-cp -i ~/..bashrc .
+cp -i ~/.bash_functions .
+cp -i ~/.bash_logout .
+cp -i ~/.bash_profile .
+cp -i ~/.bashrc .
 cp -i ~/.cunit_test_template.c .
