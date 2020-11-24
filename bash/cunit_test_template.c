@@ -22,6 +22,12 @@ int this_test_is_verbose = 0;
 static int run_unit_test(void) {
     int n_failures = 0;
 
+    // TODO: remove this
+    if (this_test_is_verbose) {
+        printf("No tests defined.\n");
+        n_failures++;
+    }
+
     // TODO: put unit test code here
 
     return n_failures;
