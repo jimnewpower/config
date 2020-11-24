@@ -26,6 +26,7 @@ fi
 # PRA develop environment
 export SRC_TREE="/home/jim/develop/pra/src"
 PATH="$SRC_TREE/common/bin:$PATH"
+export CDPATH=".:/home/jim/develop/pra/src"
 export DEBUG="/home/jim/develop/pra/src/debug.txt"
 export CONFIG_HOST_FILENAME=jim-XPS-15-9550.mk
 export PLATTE_RIVER_DEBUG=xyzzy
