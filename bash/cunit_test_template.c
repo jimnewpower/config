@@ -5,12 +5,13 @@
 #include <float.h>
 #include <math.h>
 #include <stdarg.h>
+#include <stdbool.h>
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
 #include <time.h>
 
-int this_test_is_verbose = 0;
+bool this_test_is_verbose = false;
 
 /*
  * Function:  run_unit_test
@@ -50,7 +51,7 @@ static int process_command_line(int argc, char *argv[]) {
     if (argc == 2
         && (strcmp(argv[1], "-v") == 0
          || strcmp(argv[1], "--verbose") == 0)) {
-        this_test_is_verbose = 1;
+        this_test_is_verbose = true;
         args_remaining--;
     }
 
