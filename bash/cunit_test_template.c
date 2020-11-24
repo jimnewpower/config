@@ -24,7 +24,7 @@ static int run_unit_test(void) {
 
     // TODO: remove this
     if (this_test_is_verbose) {
-        printf("No tests defined.\n");
+        printf("%s:%i: No tests defined.\n", __FILE__, __LINE__);
         n_failures++;
     }
 
