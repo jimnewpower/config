@@ -22,11 +22,11 @@ int this_test_is_verbose = 0;
 static int run_unit_test(void) {
     int n_failures = 0;
 
-    // TODO: remove this
-    if (this_test_is_verbose) {
-        printf("%s:%i: No tests defined.\n", __FILE__, __LINE__);
+    // TODO
+    // BEGIN remove this
+        fprintf(stderr, "%s:%i: No tests defined.\n", __FILE__, __LINE__);
         n_failures++;
-    }
+    // END remove this
 
     // TODO: put unit test code here
 
@@ -55,7 +55,8 @@ static int process_command_line(int argc, char *argv[]) {
     }
 
     if (args_remaining != 1) {
-        printf(
+        fprintf(
+            stderr,
             "\nUSAGE: %s [OPTION]\n"
             "\nOPTIONS\n"
             "        -v, --verbose\n"
