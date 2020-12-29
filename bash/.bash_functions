@@ -106,7 +106,7 @@ function randpass2() {
     # '[:alnum:]' all letters and digits
     # '[:graph:]' all printable characters, excluding spaces
     # pipe through head n bytes
-    tr -cd '[:alnum:]' < /dev/urandom | head -c ${1:-40}
+    tr -cd '[:alnum:]' < /dev/urandom | head -c ${1:-20}
     printf "\n"
 }
 

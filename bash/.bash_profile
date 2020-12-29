@@ -25,8 +25,6 @@ fi
 
 # PRA develop environment
 export SRC_TREE="/home/jim/develop/pra/src"
-PATH="$SRC_TREE/common/bin:$PATH"
-export CDPATH=".:/home/jim/develop/pra/src"
 export DEBUG="/home/jim/develop/pra/src/debug.txt"
 export CONFIG_HOST_FILENAME=jim-XPS-15-9550.mk
 export PLATTE_RIVER_DEBUG=xyzzy
@@ -34,5 +32,15 @@ export PLATTE_RIVER_DEBUG=xyzzy
 export NOPCINT=t
 export TEMP="/home/jim/tmp"
 
+export PATH=$PATH:/home/jim/.local/bin:/home/jim/develop/pra/src/common/bin
+
 # Personal development environment
 export SRC_TREE_PERSONAL="/home/jim/develop/personal"
+
+export PATH=$PATH:/snap/bin/flutter/bin
+
+# Added by Amplify CLI binary installer
+export PATH="$HOME/.amplify/bin:$PATH"
+
+# Added by Amplify CLI binary installer
+export PATH="$HOME/.amplify/bin:$PATH"

@@ -118,6 +118,26 @@ if ! shopt -oq posix; then
   fi
 fi
 
+# PRA develop environment
+export SRC_TREE="/home/jim/develop/pra/src"
+export DEBUG="/home/jim/develop/pra/src/debug.txt"
+export CONFIG_HOST_FILENAME=jim-XPS-15-9550.mk
+export PLATTE_RIVER_DEBUG=xyzzy
+# export RELEASE=t
+export NOPCINT=t
+export TEMP="/home/jim/tmp"
+
+export PATH=$PATH:/home/jim/.local/bin:/home/jim/develop/pra/src/common/bin
+
+# Personal development environment
+export SRC_TREE_PERSONAL="/home/jim/develop/personal"
+
+export PATH=$PATH:/snap/bin/flutter/bin
+
+
 #THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
 export SDKMAN_DIR="/home/jim/.sdkman"
 [[ -s "/home/jim/.sdkman/bin/sdkman-init.sh" ]] && source "/home/jim/.sdkman/bin/sdkman-init.sh"
+
+# Added by Amplify CLI binary installer
+export PATH="$HOME/.amplify/bin:$PATH"
