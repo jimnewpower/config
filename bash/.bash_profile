@@ -26,7 +26,7 @@ fi
 # PRA develop environment
 export SRC_TREE="/home/jim/develop/pra/src"
 export DEBUG="/home/jim/develop/pra/src/debug.txt"
-export CONFIG_HOST_FILENAME=jim-XPS-15-9550.mk
+export CONFIG_HOST_FILENAME=jim-Predator-PH317-54.mk
 export PLATTE_RIVER_DEBUG=xyzzy
 # export RELEASE=t
 export NOPCINT=t
