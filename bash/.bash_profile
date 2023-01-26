@@ -44,3 +44,11 @@ export PATH="$HOME/.amplify/bin:$PATH"
 
 # Added by Amplify CLI binary installer
 export PATH="$HOME/.amplify/bin:$PATH"
+
+# Added by Amplify CLI binary installer
+export PATH="$HOME/.amplify/bin:$PATH"
+
+
+# Added by Toolbox App
+export PATH="$PATH:/home/jim/.local/share/JetBrains/Toolbox/scripts"
+

@@ -128,12 +128,14 @@ export NOPCINT=t
 export TEMP="/home/jim/tmp"
 
 export PATH=$PATH:/home/jim/.local/bin:/home/jim/develop/basinmod/common/bin
+export JAVA_HOME="$(dirname $(dirname $(realpath $(which javac))))"
 
 # Personal development environment
 export SRC_TREE_PERSONAL="/home/jim/develop/"
 
 export PATH=$PATH:/snap/bin/flutter/bin
 
+source /home/jim/.bazel/bin/bazel-complete.bash
 
 #THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
 export SDKMAN_DIR="/home/jim/.sdkman"
